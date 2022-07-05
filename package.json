@@ -10,6 +10,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.0",
+    "json-server": "^0.17.0",
     "mrm-task-lint-staged": "^7.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
@@ -26,7 +27,8 @@
     "initial": "rm -rf node_modules yarn.lock && yarn && yarn dev",
     "lint": "npx eslint src/*",
     "prettier": "npx prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "json-server": "json-server --watch mock/db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
